@@ -2,148 +2,48 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AQM Banner</title>
     <style>
         body {
-            font-family: Impact, Haettenschweiler, sans-serif;
+            font-family:Impact, Haettenschweiler, sans-serif;
         }
         .banner-text {
-            z-index: 5;
-            top: 0;
-            text-align: center;
-            position: fixed;
+            z-index:5;
+            top:0;
+            text-align:center;
+            letter-spacing: .5vw;
+            position:fixed;
             color: #517571; /* Primary color */
             -webkit-text-stroke: .1vw white;
-            text-stroke: .1vw white; /* For non-WebKit browsers */
+            
+        .banner-text u {
+            -webkit-text-stroke:#517571;
         }
-        .banner-text span {
-            -webkit-text-stroke: #517571;
-            text-stroke: #517571; /* For non-WebKit browsers */
-        }
-        .banner-text2 {
-            z-index: 5;
-            top: 0;
-            text-align: center;
-            position: fixed;
-            color: #517571; /* Primary color */
-            -webkit-text-stroke: .2px white;
-            text-stroke: .2px white; /* For non-WebKit browsers */
-            text-shadow: 
-                0 0 3px white,   /* Solid white outline */
-                0 0 25px gold,   /* Gold outline with larger blur radius */
-                0 0 15px gold,   /* Gold outline with smaller blur radius */
-                0 0 35px #517571; /* Primary color with larger blur radius */
-        }
-
-        /* Default styles for larger screens */
-        h1.banner-text.large-screen {
-            font-size: 10vw;
-            line-height: 10vw;
-            margin-left: 30vw;
-            margin-top: 0;
-        }
-
-        h1.banner-text span.large-screen {
-            font-size: 11vw;
-        }
-
-        h1.banner-text.phoenix.large-screen {
-            right: 12vw;
-            top: 17vw;
-            font-size: 8vw;
-            letter-spacing: 3vw;
-        }
-
-        h1.banner-text.profiler.large-screen {
-            margin-left: 42vw;
-            margin-top: 31vw;
-            font-size: 4vw;
-        }
-
-        h1.banner-text.resources.large-screen {
-            right: 12vw;
-            top: 42.5vw;
-            font-size: 2.5vw;
-            -webkit-text-stroke: .03vw white;
-            text-stroke: .03vw white;
-            letter-spacing: .2vw;
-        }
-
-        /* Mobile styles */
-        @media (max-width: 768px) {
+             @media (max-width: 500px) {
             .banner-text {
-                font-size: 8vw; /* Adjusted font size for mobile */
-                letter-spacing: .2vw; /* Adjusted letter-spacing for mobile */
+                font-size: 5vw; /* Adjusted font size for mobile */
+                letter-spacing: .3vw; /* Adjusted letter-spacing for mobile */
             }
-            h1.banner-text {
-                margin: 0;
-                padding: 0;
-                width: 100vw; /* Ensure it spans the full viewport width */
-            }
-            h1.banner-text span {
-                font-size: 9vw; /* Adjusted font size for mobile */
-                display: block;
-                text-align: center;
-            }
-            h1.banner-text.phoenix {
-                right: 6vw;
-                top: 10vw;
-                font-size: 6vw;
-                letter-spacing: 1vw;
-            }
-            h1.banner-text.profiler {
-                margin-left: 21vw;
-                margin-top: 20vw;
-                font-size: 5vw;
-            }
-            h1.banner-text.resources {
-                right: 6vw;
-                top: 25vw;
-                font-size: 2vw;
-                -webkit-text-stroke: .015vw white;
-                text-stroke: .015vw white;
-                letter-spacing: .1vw;
-            }
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
+             }
     </style>
 </head>
 <body>
-    <h1 class="banner-text large-screen" style="margin-left: 30vw; margin-top: 0;">
-        Tell your story<br><span class="large-screen" style="text-decoration: underline; text-decoration-color: #517571;">WITH DATA</span>
-    </h1>
-    <h1 class="banner-text phoenix large-screen" style="position: fixed;">
-        PHOENIX
-    </h1>
-    <h1 class="banner-text profiler large-screen" style="text-shadow: 
-                0 0 3px white,   
-                0 0 25px gold,   
-                0 0 15px gold,   
-                0 0 35px #517571;">
-        Prevalence Profiler
-    </h1>
-    <img src="AIBG.png" style="height: 100%; width: 100%;">
-    <a href="https://phoenix-data.wayne.edu/map/general/bphigh/all%20data/tract/basic?geo=tract26163517500&state=state26&parentgeolevel=state&zoom=6" target="_blank">
-        <img src="ImgExport.png" style="position: fixed; right: 33vw; bottom: 10.6vw; height: 6.5vw; width: 25vw;">
-    </a>
-    <h1 class="banner-text resources large-screen" style="position: fixed;">
-        <b>(↓additional resources for investigators & health journalists↓)</b>
-    </h1>
-    <img src="SKlogogreen.png" style="position: fixed; right: 2vw; top: 37vw; height: 5vw; width: 5vw;">
-    <a href="https://phoenix-data.wayne.edu/map/general/bphigh/all%20data/tract/basic?geo=tract26163517500&state=state26&parentgeolevel=state&zoom=6" target="_blank">
-        <img src="CopyLink.png" style="position: fixed; right: 8vw; bottom: 11.7vw; height: 5.2vw; width: 25vw;">
-    </a>
-    <a href="https://gijn.org/stories/fifty-years-of-journalism-and-data-a-brief-history/#:~:text=It%20really%20wasn't%20until,in%20the%20city%20that%20summer." target="_blank">
-        <img src="DataJourn.png" style="bottom: 0px; position: fixed; left: .7vw; height: 7vw; width: 49.6vw;">
-    </a>
-    <a href="https://www.cdc.gov/eis/field-epi-manual/chapters/analyze-Interpret-Data.html" target="_blank" style="bottom: 0px; position: fixed; left: .7vw; height: 3.5vw; width: 49.6vw;"></a>
-    <a href="https://blog.apps.npr.org/tools/" target="_blank">
-        <img src="NPRTools.png" style="bottom: 0px; position: fixed; left: 49.3vw; height: 6.9vw; width: 50.1vw;">
-    </a>
-    <a href="https://docs.google.com/document/d/1Jm3jc2RGUTS_pp02eVJ1BuzfyDYGtOgnow02HamHPXE/edit" target="_blank" style="bottom: 0px; position: fixed; left: 49.3vw; height: 4.45vw; width: 50.1vw;"></a>
+    <h1 class="banner-text" style="margin-left:30vw;margin-top:0;font-size: 10vw;font-style:italic;line-height:10vw;">Tell your story<br><span style="text-decoration: underline;text-decoration-color: #517571;font-size:11vw; ">WITH DATA</span></h1>
+    <h1 class="banner-text" style="position:fixed;right:12vw;top:17vw;font-size:8vw;letter-spacing:3vw;">PHOENIX</h1>
+    <h1 class="banner-text" style="margin-left:42vw;margin-top:31vw;font-size:4vw; text-shadow: 
+                0 0 3px white,   /* Solid white outline */
+                0 0 25px gold,   /* Gold outline with larger blur radius */
+                0 0 15px gold,   /* Gold outline with smaller blur radius */
+                0 0 35px #517571; /* Primary color with larger blur radius */">Prevalence Profiler</h1>
+    <img src="AIBG.png" style="height:100%;width:100%;">
+    <a href="https://phoenix-data.wayne.edu/map/general/bphigh/all%20data/tract/basic?geo=tract26163517500&state=state26&parentgeolevel=state&zoom=6" target="_blank"><img src="ImgExport.png" style="position:fixed;right:33vw;bottom:10.6vw;height:6.5vw;width:25vw;"></a>
+    <h1 class="banner-text"  style="position:fixed;right:12vw;top:42.5vw;font-size:2.5vw;-webkit-text-stroke: .03vw white;letter-spacing: .2vw;"><b>(↓additional resources for investigators & health journalists↓)</b></h1><img src="SKlogogreen.png" style="position:fixed;right:2vw;top:37vw;height:5vw;width:5vw;">
+    <a href="https://phoenix-data.wayne.edu/map/general/bphigh/all%20data/tract/basic?geo=tract26163517500&state=state26&parentgeolevel=state&zoom=6" target="_blank"><img src="CopyLink.png" style="position:fixed;right:8vw;bottom:11.7vw;height:5.2vw;width:25vw;"></a>
+    <a href="https://gijn.org/stories/fifty-years-of-journalism-and-data-a-brief-history/#:~:text=It%20really%20wasn't%20until,in%20the%20city%20that%20summer." target="_blank"><img src="DataJourn.png" style="bottom:0px;position:fixed;left:.7vw;height:7vw;width:49.6vw;"></a>
+    <a href="https://www.cdc.gov/eis/field-epi-manual/chapters/analyze-Interpret-Data.html" target="_blank"style="bottom:0px;position:fixed;left:.7vw;height:3.5vw;width:49.6vw;"></a>
+    <a href="https://blog.apps.npr.org/tools/" target="_blank"><img src="NPRTools.png" style="bottom:0px;position:fixed;left:49.3vw;height:6.9vw;width:50.1vw;"></a>
+     <a href="https://docs.google.com/document/d/1Jm3jc2RGUTS_pp02eVJ1BuzfyDYGtOgnow02HamHPXE/edit" target="_blank"style="bottom:0px;position:fixed;left:49.3vw;height:4.45vw;width:50.1vw;"></a>
+   
 </body>
 </html>
